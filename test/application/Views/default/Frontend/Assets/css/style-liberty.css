@@ -1,0 +1,341 @@
+/*--//content with photo5--*/
+/* gallery-7 */
+.w3l-gallery-7 {
+    /*******************KEYFRAMES*******************/
+    /******************MEDIA QUERYS******************/
+    /* responsive code */
+}
+
+.w3l-gallery-7 .galleryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+}
+
+.w3l-gallery-7 .gallery {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.w3l-gallery-7 .gallery input {
+    display: none;
+}
+
+.w3l-gallery-7 .galleryImage {
+    transition: opacity 0.25s ease-out;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.w3l-gallery-7 .gallery>img:first-of-type {
+    position: relative !important;
+    display: flex !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 10;
+}
+
+.w3l-gallery-7 .arrowsContainer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 20;
+    overflow: hidden;
+}
+
+.w3l-gallery-7 .arrowsContainer img {
+    width: 100px;
+    background: white;
+    opacity: 0.4;
+    padding-bottom: 20px;
+    transition: 0.1s ease;
+}
+
+.w3l-gallery-7 .leftArrow {
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: -30px;
+    padding-left: 40px;
+    padding-right: 15px;
+}
+
+.w3l-gallery-7 .rightArrow {
+    border-top-left-radius: 10px;
+    position: absolute;
+    bottom: -20px;
+    right: -30px;
+    padding-right: 40px;
+    padding-left: 15px;
+}
+
+.w3l-gallery-7 .leftArrow:active,
+.w3l-gallery-7 .rightArrow:active {
+    transform: scale(0.95, 0.95);
+}
+
+.w3l-gallery-7 .thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 5%;
+    margin-top: 10px;
+    /*border-left: 6px solid black;*/
+    scroll-snap-type: mandatory;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.w3l-gallery-7 .thumbnailImage img {
+    width: 100%;
+    height: 120px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.w3l-gallery-7 .thumbnailImage {
+    margin: 0 5px;
+    -moz-scroll-snap-align: start;
+    -ms-scroll-snap-align: start;
+    scroll-snap-align: start;
+}
+
+.w3l-gallery-7 .thumbnailImage:first-child {
+    margin-left: 0px;
+}
+
+.w3l-gallery-7 .thumbnailImage:last-child {
+    margin-right: 0px;
+}
+
+.w3l-gallery-7 #c1:checked+#i1 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c2:checked+#i2 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c3:checked+#i3 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c4:checked+#i4 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c5:checked+#i5 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c6:checked+#i6 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c7:checked+#i7 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c8:checked+#i8 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c9:checked+#i9 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c10:checked+#i10 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c11:checked+#i11 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c12:checked+#i12 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c13:checked+#i13 {
+    opacity: 1;
+}
+
+.w3l-gallery-7 #c1:checked+#i1+#arrows1 {
+    display: flex;
+}
+
+.w3l-gallery-7 #c2:checked+#i2+#arrows2 {
+    display: flex;
+}
+
+.w3l-gallery-7 #c3:checked+#i3+#arrows3 {
+    display: flex;
+}
+
+.w3l-gallery-7 #c4:checked+#i4+#arrows4 {
+    display: flex;
+}
+
+.w3l-gallery-7 #c5:checked+#i5+#arrows5 {
+    display: flex;
+}
+
+.w3l-gallery-7 #c6:checked+#i6+#arrows6 {
+    display: flex;
+}
+
+.w3l-gallery-7 .thumbnails label,
+.w3l-gallery-7 .arrowsContainer label {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.w3l-gallery-7 .thumbnails label img {
+    transition: 0.3s ease;
+}
+
+.w3l-gallery-7 .thumbnails label img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.w3l-gallery-7 label:focus {
+    box-shadow: 0px 0px 7px 1px white;
+}
+
+@media only screen and (max-width: 650px) {
+    .w3l-gallery-7 .thumbnailImage {
+        margin: 0 3px;
+        min-height: 80px;
+        max-height: 80px;
+    }
+
+    .w3l-gallery-7 .arrowsContainer img {
+        width: 70px;
+        background: white;
+        opacity: 0.4;
+        padding-bottom: 20px;
+        transition: 0.1s ease;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .w3l-gallery-7 .thumbnailImage img {
+        height: 80px;
+    }
+
+    .w3l-gallery-7 .thumbnailImage {
+        margin: 0 3px;
+        min-height: 80px;
+        max-height: 80px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .w3l-gallery-7 .thumbnailImage img {
+        height: 60px;
+    }
+
+    .w3l-gallery-7 .thumbnailImage {
+        min-height: 60px;
+        max-height: 60px;
+    }
+}
+
+/* //gallery-7 */
+.w3l-blog h3 {
+    font-size: 35px;
+    line-height: 40px;
+    color: #232527;
+    margin: 0;
+    font-weight: 600;
+}
+
+.w3l-blog h5 {
+    font-size: 25px;
+    line-height: 30px;
+    color: #999;
+    margin: 0;
+}
+
+.w3l-blog p {
+    font-size: 17px;
+    line-height: 26px;
+    color: #777;
+}
+
+.w3l-blog .img-block a {
+    display: block;
+    position: relative;
+}
+
+.w3l-blog .img-block span {
+    background: #222831;
+    color: #a3f7bf;
+    padding: 10px 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+    .w3l-blog h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .w3l-blog h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .w3l-blog h3 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .w3l-blog h5 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .w3l-blog .img-block span {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .w3l-blog h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .w3l-blog h5 {
+        font-size: 21px;
+    }
+}

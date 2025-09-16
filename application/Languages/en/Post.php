@@ -1,0 +1,30 @@
+<?php
+return [
+    // Các khóa ngôn ngữ hiện có
+    'title_languages' => 'Danh sách Ngôn ngữ',
+    'csrf_failed' => 'Xác thực CSRF không thành công.',
+    'length_error' => ':field must be between :min and :max characters.',
+    'length_error_code' => 'The code must be exactly 2 characters.',
+    'not_alpha' => ':field must contain only alphabetic characters.',
+    'lowercase_error' => ':field must be in lowercase.',
+    'in_error' => ':field contains an invalid value.',
+    'add_success' => 'Language added successfully.',
+    'add_language_failed' => 'Failed to add language.',
+    'language_not_exists' => 'The language does not exist.',
+    'cannot_delete_default' => 'Cannot delete the default language.',
+    'delete_success' => 'Language deleted successfully.',
+    'update_success' => 'Language updated successfully.',
+    'cannot_change_default' => 'Cannot change the default language.',
+    'slug_exists' => 'Slug already exists.',
+    'title_list' => 'List of ',
+    'edit_title' => 'Edit ',
+    'list' => 'List',
+    'edit' => 'Edit',
+    'not_empty' => ':field cannot be empty.',
+    'not_min_max' => ':field must be between :min and :max characters.',
+    'lowercase' => ':field must be in lowercase.',
+    'email_valid' => ':field must be a valid email address.',
+    'url_valid' => ':field must be a valid URL.',
+    'date_valid' => ':field must be a valid date.',
+    // Thêm các khóa mới ở dưới đây
+];

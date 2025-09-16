@@ -1,0 +1,30 @@
+<?php
+return [
+    // Các khóa ngôn ngữ hiện có
+    'title_languages' => 'Danh sách Ngôn ngữ',
+    'csrf_failed' => 'Xác thực CSRF không thành công.',
+    'length_error' => ':field phải từ :min đến :max ký tự.',
+    'length_error_code' => 'Mã phải chính xác 2 ký tự.',
+    'not_alpha' => ':field chỉ chứa các ký tự chữ.',
+    'lowercase_error' => ':field phải viết thường.',
+    'in_error' => ':field chứa giá trị không hợp lệ.',
+    'add_success' => 'Thêm ngôn ngữ thành công.',
+    'add_language_failed' => 'Thêm ngôn ngữ không thành công.',
+    'language_not_exists' => 'Ngôn ngữ không tồn tại.',
+    'cannot_delete_default' => 'Không thể xóa ngôn ngữ mặc định.',
+    'delete_success' => 'Xóa ngôn ngữ thành công.',
+    'update_success' => 'Cập nhật ngôn ngữ thành công.',
+    'cannot_change_default' => 'Không thể thay đổi ngôn ngữ mặc định.',
+    'slug_exists' => 'Slug đã tồn tại.',
+    'title_list' => 'Danh sách ',
+    'edit_title' => 'Chỉnh sửa ',
+    'list' => 'Danh sách',
+    'edit' => 'Chỉnh sửa',
+    'not_empty' => ':field không được để trống.',
+    'not_min_max' => ':field phải từ :min đến :max ký tự.',
+    'lowercase' => ':field phải viết thường.',
+    'email_valid' => ':field phải là một địa chỉ email hợp lệ.',
+    'url_valid' => ':field phải là một URL hợp lệ.',
+    'date_valid' => ':field phải là một ngày hợp lệ.',
+    // Thêm các khóa khác tại đây
+];

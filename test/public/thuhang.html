@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios API Request</title>
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Fetch Data from API</h1>
+    <div id="output"></div>
+
+    <script>
+        // API URL
+        const apiURL = "https://api.blogbecon.com/vi/api/v1/home/index/";
+
+        // Function to fetch data from the API
+        function fetchData() {
+            axios.get(apiURL)
+                .then(response => {
+                    // Log the response data
+                    console.log(response.data);
+
+                    // Display the data in the HTML
+                    const output = document.getElementById('output');
+                    output.innerHTML = `<pre>${JSON.stringify(response.data, null, 2)}</pre>`;
+                })
+                .catch(error => {
+                    // Handle errors
+                    console.error('Error fetching data:', error);
+                    document.getElementById('output').innerHTML = `<p style="color: red;">Failed to fetch data. Check the console for details.</p>`;
+                });
+        }
+
+        // Call the function to fetch data when the page loads
+        fetchData();
+    </script>
+</body>
+</html>
